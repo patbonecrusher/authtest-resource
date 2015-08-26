@@ -1,7 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
 
 namespace WebAPIApplication.Controllers
@@ -13,6 +10,7 @@ namespace WebAPIApplication.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
+            System.Console.WriteLine("HERE");
             return new string[] { "value1", "value2" };
         }
 
